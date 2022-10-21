@@ -394,6 +394,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(company-scrollbar-bg ((t (:background ,zenburn-bg+2))))
    `(company-preview ((t (:background ,zenburn-green+2))))
    `(company-preview-common ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
+;;;;; corfu
+   `(corfu-current ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+   `(corfu-default ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
+   `(corfu-bar ((t (:background ,zenburn-bg+2))))
+   `(corfu-border ((t (:background ,zenburn-bg))))
+   `(corfu-annotations ((t (:foreground ,zenburn-orange))))
 ;;;;; bm
    `(bm-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
@@ -1559,12 +1565,12 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; tab-line
    `(tab-line ((t (:background ,zenburn-bg+1))))
    `(tab-line-tab ((t (:foreground ,zenburn-fg
-                                  :background ,zenburn-bg
-                                  :weight bold
-                                  :box (:line-width -1 :style released-button)))))
+                                   :background ,zenburn-bg
+                                   :weight bold
+                                   :box (:line-width -1 :style released-button)))))
    `(tab-line-tab-inactive ((t (:foreground ,zenburn-fg
-                                           :background ,zenburn-bg+1
-                                           :box (:line-width -1 :style released-button)))))
+                                            :background ,zenburn-bg+1
+                                            :box (:line-width -1 :style released-button)))))
    `(tab-line-tab-current ((t (:foreground ,zenburn-fg
                                            :background ,zenburn-bg+1
                                            :box (:line-width -1 :style pressed-button)))))
@@ -1697,7 +1703,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; nrepl-client
    `(nrepl-message-colors
      '(,zenburn-red ,zenburn-orange ,zenburn-yellow ,zenburn-green ,zenburn-green+4
-       ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
+                    ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
 ;;;;; pdf-tools
    `(pdf-view-midnight-colors '(,zenburn-fg . ,zenburn-bg-05))
 ;;;;; vc-annotate
