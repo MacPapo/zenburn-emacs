@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(deftheme zenburn "The Zenburn color theme")
+(deftheme zenburn "The Zenburn color theme.")
 
 (defgroup zenburn-theme nil
   "Zenburn theme."
@@ -400,6 +400,22 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(corfu-bar ((t (:background ,zenburn-bg+2))))
    `(corfu-border ((t (:background ,zenburn-bg))))
    `(corfu-annotations ((t (:foreground ,zenburn-orange))))
+
+;;;;; lsp-ui doc
+   `(lsp-ui-doc-border ((t (:color ,zenburn-orange))))
+   `(lsp-ui-doc-background ((t (:background ,zenburn-bg-05))))
+   `(lsp-ui-doc-header ((t (:foreground ,zenburn-orange :background ,zenburn-bg-08))))
+
+;;;;; lsp-ui peek
+   `(lsp-ui-peek-peek ((t (:background ,zenburn-bg-08))))
+   `(lsp-ui-peek-list ((t (:background ,zenburn-bg-08))))
+   `(lsp-ui-peek-line-number ((t (:inherit default :foreground ,zenburn-bg+3 :background ,zenburn-bg-05))))
+   `(lsp-ui-peek-highlight ((t (:foreground ,zenburn-orange :background ,zenburn-bg+1))))
+   `(lsp-ui-peek-filename ((t (:foreground ,zenburn-red :background ,zenburn-bg-08))))
+   `(lsp-ui-peek-header ((t (:foreground ,zenburn-orange :background ,zenburn-bg+05))))
+   `(lsp-ui-peek-footer ((t (:foreground ,zenburn-orange :background ,zenburn-bg))))
+   `(lsp-ui-peek-selection ((t (:background ,zenburn-bg+1))))
+
 ;;;;; bm
    `(bm-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
    `(bm-fringe-face ((t (:background ,zenburn-yellow-1 :foreground ,zenburn-bg))))
